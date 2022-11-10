@@ -7,21 +7,21 @@ author: Martin Becze <mb@ethereum.org>, Hudson Jameson <hudson@ethereum.org>, et
 created: 2015-10-27
 ---
 
-## What is an EIP?
+## EIP - что это?
 
-EIP stands for Ethereum Improvement Proposal. An EIP is a design document providing information to the Ethereum community, or describing a new feature for Ethereum or its processes or environment. The EIP should provide a concise technical specification of the feature and a rationale for the feature. The EIP author is responsible for building consensus within the community and documenting dissenting opinions.
+EIP - аббревиатура от Ethereum Improvement Proposal (Предложения по улучшению Ethereum). EIP - это проектный документ, который предоставляет: информацию Ethereum сообществу; описание нового функционала Ethereum, процесса или окружения. EIP должен предоставлять локаничную техническую спецификацию функционала и его обоснование (применение). Авторы EIP-а ответственны за достижение консенсуса в сообществе и документацию противоположных(несогласных) мнений.
 
-## EIP Rationale
+## Обоснование EIP
 
-We intend EIPs to be the primary mechanisms for proposing new features, for collecting community technical input on an issue, and for documenting the design decisions that have gone into Ethereum. Because the EIPs are maintained as text files in a versioned repository, their revision history is the historical record of the feature proposal.
+Мы намерены сделать EIP основным механизмом предложения нового функционала, для сбора технических отзывов от сообщества и для документирования функционала, который был внедрен в Ethereum. Поскольку EIP представляет собой текстовый файл в версионируемом репозитории, история изменения этого файла является исторической записью предлагаемого функционала.
 
-For Ethereum implementers, EIPs are a convenient way to track the progress of their implementation. Ideally each implementation maintainer would list the EIPs that they have implemented. This will give end users a convenient way to know the current status of a given implementation or library.
+Для разработчиков Ethereum, EIP удобный способ отслеживать прогресс их реализаций. В идеале каждый мэйнтейнер имплементации должен создать EIP, в которой опишет свою имплементацию. Это даст конечным пользователям удобный способ узнать статус данной реализации функционала или статус разработки библиотеки.
 
-## EIP Types
+## Типы EIP
 
-There are three types of EIP:
+Есть всего три типа EIP:
 
-- A **Standards Track EIP** describes any change that affects most or all Ethereum implementations, such as—a change to the network protocol, a change in block or transaction validity rules, proposed application standards/conventions, or any change or addition that affects the interoperability of applications using Ethereum. Standards Track EIPs consist of three parts—a design document, an implementation, and (if warranted) an update to the [formal specification](https://github.com/ethereum/yellowpaper). Furthermore, Standards Track EIPs can be broken down into the following categories:
+- **Standards Track EIP** описывает любые изменения, которые затрагивают большинство или все реализации Ethereum, напрмер: изменение сетевого протокола; изменение в правилах валидирования блока или транзакции; предлагаемые прикладные стандарты/условия; любые изменения или дополнения, влияющие на интероперабельность приложений, использующих Ethereum. Standards Track EIPs consist of three parts—a design document, an implementation, and (if warranted) an update to the [formal specification](https://github.com/ethereum/yellowpaper). Furthermore, Standards Track EIPs can be broken down into the following categories:
   - **Core**: improvements requiring a consensus fork (e.g. [EIP-5](./eip-5.md), [EIP-101](./eip-101.md)), as well as changes that are not necessarily consensus critical but may be relevant to [“core dev” discussions](https://github.com/ethereum/pm) (for example, [EIP-90], and the miner/node strategy changes 2, 3, and 4 of [EIP-86](./eip-86.md)).
   - **Networking**: includes improvements around [devp2p](https://github.com/ethereum/devp2p/blob/readme-spec-links/rlpx.md) ([EIP-8](./eip-8.md)) and [Light Ethereum Subprotocol](https://ethereum.org/en/developers/docs/nodes-and-clients/#light-node), as well as proposed improvements to network protocol specifications of [whisper](https://github.com/ethereum/go-ethereum/issues/16013#issuecomment-364639309) and [swarm](https://github.com/ethereum/go-ethereum/pull/2959).
   - **Interface**: includes improvements around client [API/RPC](https://github.com/ethereum/execution-apis#README) specifications and standards, and also certain language-level standards like method names ([EIP-6](./eip-6.md)) and [contract ABIs](https://docs.soliditylang.org/en/develop/abi-spec.html). The label “interface” aligns with the [interfaces repo] and discussion should primarily occur in that repository before an EIP is submitted to the EIPs repository.
